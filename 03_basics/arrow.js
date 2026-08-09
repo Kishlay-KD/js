@@ -9,10 +9,23 @@ const user = {
     }
 }
 // user.welcome()
-console.log(this)
+// console.log(this)
 
 function chai(){
     name : "kishlay"
     console.log(this.name)
 }
-chai()
+// chai()
+
+const add = (num1,num2) => {
+    return num1+num2
+}
+// console.log(add(1,2))
+
+
+// implicit return
+const add1 = (num1,num2) => num1+num2
+// console.log(add1(1,2))
+
+const add2 = (num1,num2) => ({user:"hitesh"})
+console.log(add2(1,2))
