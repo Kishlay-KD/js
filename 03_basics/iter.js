@@ -15,4 +15,19 @@ mynums.forEach((num) => {
         newnums.push(num)
     }
 })
-console.log(newnums)
+// console.log(newnums)
+
+const numbers = [1,2,3,4,5,6,7,8,9,10]
+// const mynumber = numbers.map((num)=>num+10)
+const mynumber = numbers.map((num)=>num*10)
+                        .map((num)=>num+1)
+                        .filter((num)=>num>=40)
+console.log(mynumber)
+
+const mynum = [1,2,3]
+const total = mynum.reduce(function(acc,currval){
+    console.log(`ac: is $(acc),currval is ${currval}`)
+    return acc+currval
+
+},0)
+console.log(mynum)
